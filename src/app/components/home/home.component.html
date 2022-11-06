@@ -1,0 +1,11 @@
+<h1>Bienvenido</h1>
+<p>Crea una sala o conectate a una ya existente</p>
+
+<form (submit)="crearUnaSala()">
+  <input type="submit" value="Crear Una Sala" />
+</form>
+
+<form (submit)="entrarEnLaSala()">
+  <input type="text" name="room" [(ngModel)]="roomName" />
+  <input type="submit" value="Unirse" />
+</form>

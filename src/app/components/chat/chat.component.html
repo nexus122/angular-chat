@@ -1,0 +1,17 @@
+<div class="chatContainer">
+  <h1>Estas en la sala: {{ room }}</h1>
+  <p class="local" *ngFor="let message of chat.chats">
+    {{ message }}
+  </p>
+
+  <div class="inputContainer">
+    <form (submit)="sendMessage()">
+      <input
+        type="text"
+        [(ngModel)]="text"
+        [ngModelOptions]="{ standalone: true }"
+      />
+      <input type="submit" />
+    </form>
+  </div>
+</div>

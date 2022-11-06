@@ -10,9 +10,12 @@ import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { LenguajeSelectorComponent } from './components/lenguaje-selector/lenguaje-selector.component';
+import { ChatComponent } from './components/chat/chat.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
-  declarations: [AppComponent, LenguajeSelectorComponent],
+  declarations: [AppComponent, LenguajeSelectorComponent, ChatComponent, HomeComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -24,6 +27,8 @@ import { LenguajeSelectorComponent } from './components/lenguaje-selector/lengua
         deps: [HttpClient],
       },
     }),
+    ReactiveFormsModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
