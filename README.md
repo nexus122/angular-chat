@@ -1,27 +1,25 @@
-# ScaffoldingAngular
+# Angular Chat
+Un chat en tiempo real dividido por salas montado en Angular.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.5.
+## Deploy 🚀
+Para arrancar el proyecto solo hay un par de pasos.
+1. Clona el proyecto en una carpeta
+2. Entra en el proyecto con visual studio code y abre una terminal
+  2.1 Escribe el comando `npm i` para instalar las librerias
+3. Cuando acabe de instalar las librerias escribe el comando `npm run start`, estaras ejecutando al mismo tiempo el servidor de sockets y Angular :)
 
-## Development server
+## Pagina
+### Home
+Crea una sala o unete a una existente
+![image](https://user-images.githubusercontent.com/22988550/200375988-4a570753-7600-40ce-be51-e70f385eb209.png)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### Sala
+Cuando estes en la sala puedes utilizar el input para escribir tu mensaje o ver los mensajes de los demas.
+![image](https://user-images.githubusercontent.com/22988550/200376295-019e6678-fbc0-4bff-a9cd-bd45320f0711.png)
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Por hacer
+- [ ] Hacerle unos estilos a la pobre pagina.
+- [ ] Sistema de usuarios para saber quien escribe los mensajes.
+- [ ] Subir el servidor a un host gratuito para probar la pagina.
+- [ ] Conectar una bbdd para guardar los mensajes por sala.
+  - [ ] Intentar conectar firebase por ejemplo.
