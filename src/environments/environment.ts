@@ -5,6 +5,7 @@
 export const environment = {
   production: false,
   socketUrl: 'http://localhost:3000',
+  redirectUrl: 'http://localhost:4200/'
 };
 
 /*

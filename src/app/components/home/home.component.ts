@@ -1,17 +1,19 @@
 import { Component } from '@angular/core';
-
+import { environment } from 'src/environments/environment';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent {
-  constructor() {}
+  constructor(private router: Router) {}
   roomName: String = '';
   entrarEnLaSala() {
-    location.href = 'http://localhost:4200/' + this.roomName;
+    this.router.navigate(['/' + this.roomName]);
   }
   crearUnaSala() {
-    location.href = 'http://localhost:4200/' + 'room_' + Date.now();
+    let random: string = '/' + 'room_' + Date.now();
+    this.router.navigate([random]);
   }
 }
