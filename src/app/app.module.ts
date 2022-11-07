@@ -9,13 +9,12 @@ import { AppComponent } from './app.component';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
-import { LenguajeSelectorComponent } from './components/lenguaje-selector/lenguaje-selector.component';
 import { ChatComponent } from './components/chat/chat.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
-  declarations: [AppComponent, LenguajeSelectorComponent, ChatComponent, HomeComponent],
+  declarations: [AppComponent, ChatComponent, HomeComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
